@@ -1,0 +1,221 @@
+/* ===General=== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --bg-html: rgba(250,250,250);
+    --border-color: rgba(219,219,219);
+    --gray: rgb(206, 202, 202);
+    --black-gray: rgb(144, 140, 140);
+    --white: rgb(255, 255, 255);
+    --bg-login: rgb(178, 223, 252);
+    --bg-login-hover: rgb(0, 149, 246);
+    --blue: rgb(23, 149, 246);
+    --blue-facebook: rgb(56, 97, 155);
+}
+
+html {
+    background-color: var(--bg-html);
+}
+
+.border {
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+}
+
+.bar {
+    width: 40%;
+    height: 1px;
+    background-color: var(--gray);
+}
+
+.z-1 {
+    z-index: 2;
+}
+
+.z-0 {
+    z-index: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===Container===*/
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 912px;
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+}
+
+/* ===Images phone=== */
+.phone-image {
+    position: relative;
+    height: 580px;
+    width: 48%;
+    background-image: url(../images/bg-phone.png);
+}
+
+.img-phone {
+    position: absolute;
+    right: 30px;
+    top: 22px;
+    width: 252px;
+}
+
+/* ===Login=== */
+.container-login {
+    width: 40%;
+    height: 550px;
+}
+
+.container-form {
+    padding: 30px 40px 20px;
+    margin-bottom: 10px;
+}
+
+.img-insta {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form {
+    width: 100%;
+    margin-top: 30px;
+}
+
+form > input {
+    display: block;
+    width: 100%;
+    height: 33px;
+    margin-bottom: 5px;
+    padding: 20px 6px;
+    border: 1px solid #eee;
+    background-color: #fdfdfd;
+}
+
+input::placeholder {
+    font-size: 12px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input[type="submit"] {
+    background-color: var(--bg-login);
+    color: var(--white);
+    height: 30px;
+    padding: 5px 0;
+    margin-top: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--bg-login-hover);
+}
+
+.division {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.division > p {
+    width: 10%;
+    color: var(--black-gray);
+    font-weight: bold;
+}
+
+.login-with-faceb > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0;
+    color: var(--blue-facebook);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.login-with-faceb > a > i {
+    font-size: 25px;
+}
+
+.login-with-faceb > p {
+    text-align: center;
+    font-size: 14px;
+    color: var(--blue-facebook);
+}
+
+.no-have-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 60px;
+    font-size: 14px;
+}
+
+#register {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+/* ===Obtenha o Aplicativo=== */
+.get-app {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.get-app > p {
+    margin: 20px 0;
+    font-size: 14px;
+}
+.img-app{
+    width: 140px;
+}
+
+/* ==Responsivo=== */
+@media (max-width: 924px) {
+    .container{
+        justify-content: center;
+    }
+    .phone-image {
+        display: none;
+    }
+    .container-login{
+        width: 420px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container-login{
+        width: 300px;
+    }
+
+    .container-form{
+        padding: 30px 20px 20px;
+    }
+
+    .border {
+        border-color: transparent;
+        background-color: transparent;
+    }
+}
