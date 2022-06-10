@@ -3,7 +3,7 @@ Esse é um desafio de projeto do Bootcamp Desenvolvedor FullStack do Santander e
 
 ## link do projeto:
 https://10-andreray.github.io/Landing-Page-Instagram/
-</br>
+
 ![insta](https://user-images.githubusercontent.com/81325811/173159187-9251050e-09c9-4848-bebe-2a5b8d9c287e.png)
 
 ## Desenvolvido com: 
